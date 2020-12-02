@@ -158,11 +158,12 @@ public class ViewsJadwal extends Fragment {
                         String tanggal              = jsonObject.optString("tanggal");
                         String waktu                = jsonObject.optString("waktu");
                         String keterangan           = jsonObject.optString("keterangan");
+                        String gambar               = jsonObject.optString("gambar");
 
 
                         //membuat objek user
                         Jadwal Jadwal =
-                                new Jadwal(id, tanggal, waktu, keterangan);
+                                new Jadwal(id, tanggal, waktu, keterangan, gambar);
 
                         //menambahkan obejk user tadi ke list user
                         listJadwal.add(Jadwal);
